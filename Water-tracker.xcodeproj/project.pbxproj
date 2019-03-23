@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B7B5DB1223FD1FE00953AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DB0223FD1FE00953AA1 /* AppDelegate.swift */; };
+		3B7B5DB6223FD1FE00953AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B5DB4223FD1FE00953AA1 /* Main.storyboard */; };
+		3B7B5DBB223FD20200953AA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B5DBA223FD20200953AA1 /* Assets.xcassets */; };
+		3B7B5DBE223FD20200953AA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B5DBC223FD20200953AA1 /* LaunchScreen.storyboard */; };
+		3B7B5DC9223FD2A600953AA1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DC8223FD2A600953AA1 /* InitialViewController.swift */; };
+		3B7B5DCB223FD2E000953AA1 /* ChooseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DCA223FD2E000953AA1 /* ChooseCollectionViewController.swift */; };
+		3B7B5DCD223FD32300953AA1 /* ChartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DCC223FD32300953AA1 /* ChartsTableViewController.swift */; };
+		3B7B5DCF223FD36000953AA1 /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DCE223FD36000953AA1 /* StaticTableViewController.swift */; };
+		3B7B5DD1223FD39600953AA1 /* SelectDrinkValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DD0223FD39600953AA1 /* SelectDrinkValueViewController.swift */; };
+		3B7B5DD5223FD3D000953AA1 /* DrinksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DD4223FD3D000953AA1 /* DrinksCell.swift */; };
+		3B7B5DD7223FD3F400953AA1 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DD6223FD3F400953AA1 /* Extentions.swift */; };
+		3B7B5DD9223FD44700953AA1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DD8223FD44700953AA1 /* Data.swift */; };
+		3B7B5DDB223FD48900953AA1 /* Quantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DDA223FD48900953AA1 /* Quantity.swift */; };
+		3B7B5DDD223FD4B100953AA1 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DDC223FD4B100953AA1 /* Drinks.swift */; };
+		3B7B5DDF223FD50400953AA1 /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DDE223FD50400953AA1 /* SettingsData.swift */; };
+		3B7B5DE1223FD54B00953AA1 /* NotificationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DE0223FD54B00953AA1 /* NotificationTime.swift */; };
+		3B7B5DE3223FE09800953AA1 /* ChartsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7B5DE2223FE09800953AA1 /* ChartsTableViewCell.swift */; };
+		3B7B5DE6223FE0AF00953AA1 /* ChartsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B5DE4223FE0AF00953AA1 /* ChartsTableViewCell.xib */; };
+		3B7B5DE7223FE0AF00953AA1 /* ChartsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B5DE5223FE0AF00953AA1 /* ChartsTableViewController.xib */; };
+		3BC5E2152240F868003F7E64 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5E2142240F868003F7E64 /* CoreDataManager.swift */; };
+		3BC5E2182240FA2D003F7E64 /* Water_tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5E2162240FA2D003F7E64 /* Water_tracker.xcdatamodeld */; };
+		3BC5E21D2240FA59003F7E64 /* UserConfiguration+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5E2192240FA59003F7E64 /* UserConfiguration+CoreDataClass.swift */; };
+		3BC5E21E2240FA59003F7E64 /* UserConfiguration+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5E21A2240FA59003F7E64 /* UserConfiguration+CoreDataProperties.swift */; };
+		3BC5E21F2240FA59003F7E64 /* Drink+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5E21B2240FA59003F7E64 /* Drink+CoreDataClass.swift */; };
+		3BC5E2202240FA59003F7E64 /* Drink+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5E21C2240FA59003F7E64 /* Drink+CoreDataProperties.swift */; };
+		3BC5E2492242674C003F7E64 /* ChartsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC5E2482242674C003F7E64 /* ChartsTable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B7B5DAD223FD1FE00953AA1 /* Water-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Water-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7B5DB0223FD1FE00953AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B7B5DB5223FD1FE00953AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B7B5DBA223FD20200953AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B7B5DBD223FD20200953AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B7B5DBF223FD20200953AA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7B5DC8223FD2A600953AA1 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		3B7B5DCA223FD2E000953AA1 /* ChooseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCollectionViewController.swift; sourceTree = "<group>"; };
+		3B7B5DCC223FD32300953AA1 /* ChartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewController.swift; sourceTree = "<group>"; };
+		3B7B5DCE223FD36000953AA1 /* StaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
+		3B7B5DD0223FD39600953AA1 /* SelectDrinkValueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDrinkValueViewController.swift; sourceTree = "<group>"; };
+		3B7B5DD4223FD3D000953AA1 /* DrinksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksCell.swift; sourceTree = "<group>"; };
+		3B7B5DD6223FD3F400953AA1 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		3B7B5DD8223FD44700953AA1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "Water-tracker/Models/Data.swift"; sourceTree = SOURCE_ROOT; };
+		3B7B5DDA223FD48900953AA1 /* Quantity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quantity.swift; sourceTree = "<group>"; };
+		3B7B5DDC223FD4B100953AA1 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		3B7B5DDE223FD50400953AA1 /* SettingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
+		3B7B5DE0223FD54B00953AA1 /* NotificationTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTime.swift; sourceTree = "<group>"; };
+		3B7B5DE2223FE09800953AA1 /* ChartsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsTableViewCell.swift; sourceTree = "<group>"; };
+		3B7B5DE4223FE0AF00953AA1 /* ChartsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartsTableViewCell.xib; sourceTree = "<group>"; };
+		3B7B5DE5223FE0AF00953AA1 /* ChartsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartsTableViewController.xib; sourceTree = "<group>"; };
+		3BC5E2142240F868003F7E64 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3BC5E2172240FA2D003F7E64 /* Water_tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Water_tracker.xcdatamodel; sourceTree = "<group>"; };
+		3BC5E2192240FA59003F7E64 /* UserConfiguration+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserConfiguration+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3BC5E21A2240FA59003F7E64 /* UserConfiguration+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserConfiguration+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3BC5E21B2240FA59003F7E64 /* Drink+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3BC5E21C2240FA59003F7E64 /* Drink+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3BC5E2482242674C003F7E64 /* ChartsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B7B5DAA223FD1FE00953AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B7B5DA4223FD1FE00953AA1 = {
+			isa = PBXGroup;
+			children = (
+				3B7B5DAF223FD1FE00953AA1 /* Water-tracker */,
+				3B7B5DAE223FD1FE00953AA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B7B5DAE223FD1FE00953AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B5DAD223FD1FE00953AA1 /* Water-tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B7B5DAF223FD1FE00953AA1 /* Water-tracker */ = {
+			isa = PBXGroup;
+			children = (
+				3B874C9222450BD2009DB14E /* CoreData */,
+				3B7B5DB0223FD1FE00953AA1 /* AppDelegate.swift */,
+				3B7B5DC7223FD23F00953AA1 /* Models */,
+				3B7B5DC6223FD23100953AA1 /* Views */,
+				3B7B5DC5223FD21E00953AA1 /* Controllers */,
+				3B874C91224508A3009DB14E /* May be need */,
+				3B7B5DBA223FD20200953AA1 /* Assets.xcassets */,
+				3B7B5DBF223FD20200953AA1 /* Info.plist */,
+			);
+			path = "Water-tracker";
+			sourceTree = "<group>";
+		};
+		3B7B5DC5223FD21E00953AA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B5DCA223FD2E000953AA1 /* ChooseCollectionViewController.swift */,
+				3B7B5DE2223FE09800953AA1 /* ChartsTableViewCell.swift */,
+				3B7B5DD0223FD39600953AA1 /* SelectDrinkValueViewController.swift */,
+				3B7B5DCE223FD36000953AA1 /* StaticTableViewController.swift */,
+				3B7B5DCC223FD32300953AA1 /* ChartsTableViewController.swift */,
+				3B7B5DD4223FD3D000953AA1 /* DrinksCell.swift */,
+				3B7B5DC8223FD2A600953AA1 /* InitialViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B7B5DC6223FD23100953AA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B5DD6223FD3F400953AA1 /* Extentions.swift */,
+				3B7B5DB4223FD1FE00953AA1 /* Main.storyboard */,
+				3B7B5DE5223FE0AF00953AA1 /* ChartsTableViewController.xib */,
+				3B7B5DBC223FD20200953AA1 /* LaunchScreen.storyboard */,
+				3B7B5DE4223FE0AF00953AA1 /* ChartsTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B7B5DC7223FD23F00953AA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B7B5DD8223FD44700953AA1 /* Data.swift */,
+				3B7B5DDA223FD48900953AA1 /* Quantity.swift */,
+				3B7B5DDC223FD4B100953AA1 /* Drinks.swift */,
+				3B7B5DDE223FD50400953AA1 /* SettingsData.swift */,
+				3B7B5DE0223FD54B00953AA1 /* NotificationTime.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B874C91224508A3009DB14E /* May be need */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5E2482242674C003F7E64 /* ChartsTable.swift */,
+			);
+			path = "May be need";
+			sourceTree = "<group>";
+		};
+		3B874C9222450BD2009DB14E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5E2162240FA2D003F7E64 /* Water_tracker.xcdatamodeld */,
+				3BC5E21C2240FA59003F7E64 /* Drink+CoreDataProperties.swift */,
+				3BC5E21A2240FA59003F7E64 /* UserConfiguration+CoreDataProperties.swift */,
+				3BC5E2192240FA59003F7E64 /* UserConfiguration+CoreDataClass.swift */,
+				3BC5E21B2240FA59003F7E64 /* Drink+CoreDataClass.swift */,
+				3BC5E2142240F868003F7E64 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B7B5DAC223FD1FE00953AA1 /* Water-tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7B5DC2223FD20200953AA1 /* Build configuration list for PBXNativeTarget "Water-tracker" */;
+			buildPhases = (
+				3B7B5DA9223FD1FE00953AA1 /* Sources */,
+				3B7B5DAA223FD1FE00953AA1 /* Frameworks */,
+				3B7B5DAB223FD1FE00953AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Water-tracker";
+			productName = "Water-tracker";
+			productReference = 3B7B5DAD223FD1FE00953AA1 /* Water-tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B7B5DA5223FD1FE00953AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Artem Golovanev";
+				TargetAttributes = {
+					3B7B5DAC223FD1FE00953AA1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B7B5DA8223FD1FE00953AA1 /* Build configuration list for PBXProject "Water-tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B7B5DA4223FD1FE00953AA1;
+			productRefGroup = 3B7B5DAE223FD1FE00953AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B7B5DAC223FD1FE00953AA1 /* Water-tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B7B5DAB223FD1FE00953AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B7B5DE6223FE0AF00953AA1 /* ChartsTableViewCell.xib in Resources */,
+				3B7B5DBE223FD20200953AA1 /* LaunchScreen.storyboard in Resources */,
+				3B7B5DBB223FD20200953AA1 /* Assets.xcassets in Resources */,
+				3B7B5DE7223FE0AF00953AA1 /* ChartsTableViewController.xib in Resources */,
+				3B7B5DB6223FD1FE00953AA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B7B5DA9223FD1FE00953AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC5E2182240FA2D003F7E64 /* Water_tracker.xcdatamodeld in Sources */,
+				3B7B5DE3223FE09800953AA1 /* ChartsTableViewCell.swift in Sources */,
+				3B7B5DDF223FD50400953AA1 /* SettingsData.swift in Sources */,
+				3BC5E21F2240FA59003F7E64 /* Drink+CoreDataClass.swift in Sources */,
+				3B7B5DDB223FD48900953AA1 /* Quantity.swift in Sources */,
+				3BC5E2152240F868003F7E64 /* CoreDataManager.swift in Sources */,
+				3B7B5DD5223FD3D000953AA1 /* DrinksCell.swift in Sources */,
+				3B7B5DC9223FD2A600953AA1 /* InitialViewController.swift in Sources */,
+				3B7B5DE1223FD54B00953AA1 /* NotificationTime.swift in Sources */,
+				3B7B5DD7223FD3F400953AA1 /* Extentions.swift in Sources */,
+				3B7B5DCF223FD36000953AA1 /* StaticTableViewController.swift in Sources */,
+				3B7B5DD9223FD44700953AA1 /* Data.swift in Sources */,
+				3BC5E2202240FA59003F7E64 /* Drink+CoreDataProperties.swift in Sources */,
+				3BC5E21E2240FA59003F7E64 /* UserConfiguration+CoreDataProperties.swift in Sources */,
+				3B7B5DB1223FD1FE00953AA1 /* AppDelegate.swift in Sources */,
+				3B7B5DDD223FD4B100953AA1 /* Drinks.swift in Sources */,
+				3B7B5DD1223FD39600953AA1 /* SelectDrinkValueViewController.swift in Sources */,
+				3BC5E21D2240FA59003F7E64 /* UserConfiguration+CoreDataClass.swift in Sources */,
+				3BC5E2492242674C003F7E64 /* ChartsTable.swift in Sources */,
+				3B7B5DCD223FD32300953AA1 /* ChartsTableViewController.swift in Sources */,
+				3B7B5DCB223FD2E000953AA1 /* ChooseCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B7B5DB4223FD1FE00953AA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B7B5DB5223FD1FE00953AA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B7B5DBC223FD20200953AA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B7B5DBD223FD20200953AA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B7B5DC0223FD20200953AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B7B5DC1223FD20200953AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B7B5DC3223FD20200953AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8474UDANMR;
+				INFOPLIST_FILE = "Water-tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "omichka.Water-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B7B5DC4223FD20200953AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8474UDANMR;
+				INFOPLIST_FILE = "Water-tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "omichka.Water-tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B7B5DA8223FD1FE00953AA1 /* Build configuration list for PBXProject "Water-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7B5DC0223FD20200953AA1 /* Debug */,
+				3B7B5DC1223FD20200953AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7B5DC2223FD20200953AA1 /* Build configuration list for PBXNativeTarget "Water-tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B7B5DC3223FD20200953AA1 /* Debug */,
+				3B7B5DC4223FD20200953AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3BC5E2162240FA2D003F7E64 /* Water_tracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3BC5E2172240FA2D003F7E64 /* Water_tracker.xcdatamodel */,
+			);
+			currentVersion = 3BC5E2172240FA2D003F7E64 /* Water_tracker.xcdatamodel */;
+			path = Water_tracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3B7B5DA5223FD1FE00953AA1 /* Project object */;
+}
